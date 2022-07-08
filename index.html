@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="icons/timer.svg">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Настройки и выбор таймера -->
+        <div id="settings-screen">
+            <div class="container">
+                <div class="logo">
+                    <img src="/icons/timer.svg" alt="">
+                </div>
+                <div class="input">
+                    <input type="number" name="time" id="inputTime" placeholder="Enter a time">
+                    <div id="btnStart" class="button">Start</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Работа таймера -->
+        <div id="timer-screen" class="display__none">
+            <div class="timer">
+                <p><span id="minutes">0</span> minutes <span id="seconds">0</span> seconds </p>
+            </div>
+            <div class="time-outer">
+                <div id="loading"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
